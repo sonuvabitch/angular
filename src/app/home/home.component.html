@@ -1,0 +1,17 @@
+<h1>Home</h1>
+
+<p>How much for a single bitcoin?</p>
+
+<ul *ngIf="currency">
+  <li >
+    {{currency.bpi.EUR.code}}: {{currency.bpi.EUR.rate}}
+  </li>
+
+  <li >
+    {{currency.bpi.GBP.code}}: {{currency.bpi.GBP.rate}}
+  </li>
+
+  <li >
+    {{currency.bpi.USD.code}}: {{currency.bpi.USD.rate}}
+  </li>
+</ul>
